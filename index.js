@@ -23,13 +23,11 @@ while (flag) {
     print('HUH?! SPEAK UP, SONNY!');
   } else if (speaker === 'BYE') {
     noofbye += 1;
-    if (noofbye >= 3) {
+    if (noofbye === 3) {
       break;
     }
-    const listener = `NO, NOT SINCE ${getRandomValue(1930, 1950)}`;
-    print(listener);
+    print(`NO, NOT SINCE ${getRandomValue(1930, 1950)}`);
   } else {
-    const listener = `NO, NOT SINCE ${getRandomValue(1930, 1950)}`;
-    print(listener);
+    print(`NO, NOT SINCE ${getRandomValue(1930, 1950)}`);
   }
 }
