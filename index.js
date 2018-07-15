@@ -16,16 +16,12 @@ const { prompt, print } = require('./prompt-print');
 
 print('What do you want to say to Grandma!!');
 let noofbye = 0;
-const flag = 1;
-while (flag) {
+while (noofbye < 2) {
   const speaker = prompt();
   if (!isUppercase(speaker)) {
     print('HUH?! SPEAK UP, SONNY!');
   } else if (speaker === 'BYE') {
     noofbye += 1;
-    if (noofbye === 3) {
-      break;
-    }
     print(`NO, NOT SINCE ${getRandomValue(1930, 1950)}`);
   } else {
     print(`NO, NOT SINCE ${getRandomValue(1930, 1950)}`);
